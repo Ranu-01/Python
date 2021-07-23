@@ -102,10 +102,6 @@ def movement():
     global x_speed
     global y_speed
     for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            exit()
-            
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_UP:
                 if y_speed != 1:
@@ -162,3 +158,8 @@ while True:
     screen.blit(text, (0, 0))
     pygame.display.update()
     clock.tick(10)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
