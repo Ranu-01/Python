@@ -1,2 +1,2 @@
-# ranuadhi
-PYTHON
+# PYTHON
+all assignments about python
